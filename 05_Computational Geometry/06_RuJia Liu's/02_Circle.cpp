@@ -110,7 +110,7 @@ int getTangents(Circle A, Circle B, Point* a, Point* b)
         return 1;
     }
     //有外共切线
-    double ang = acos(A.r - B.r) / sqrt(d2);
+    double ang = acos((A.r - B.r) / sqrt(d2));
     a[cnt] = A.point(base + ang);
     b[cnt] = B.point(base + ang);
     cnt++;
