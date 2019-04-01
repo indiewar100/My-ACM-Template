@@ -76,7 +76,7 @@ struct ISAP
         for (int i = 0; i < n; i++)
             if (d[i] < INF) num[d[i]]++;
         int x = s;
-        memset(cur, 0);
+        memset(cur, 0, sizeof(cur));
         while (d[s] < n)
         {
             if (x == t)
